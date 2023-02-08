@@ -1,0 +1,269 @@
+@import "./normalixe.css";
+
+img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+label {
+  font-size: 10px;
+}
+
+p{
+  margin: 0;
+}
+
+.main {
+  padding-top: 50px;
+}
+
+.wr {
+  max-width: 500px;
+  border: 3px solid gray;
+  padding: 30px 15px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: darkslategray;
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.scales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.scales-input {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  padding: 5px 0;
+  position: relative;
+}
+
+.scales-input:after {
+  position: absolute;
+  display: block;
+  content: attr(data-minValue);
+  width: 5px;
+  bottom: -20px;
+  left: -6px;
+}
+
+.scales-input:before {
+  position: absolute;
+  display: block;
+  content: attr(data-maxValue);
+  width: 5px;
+  bottom: -20px;
+  right: 6px;
+}
+
+.product {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px 10px 10px;
+}
+
+.product:after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: black;
+  height: 235px;
+  width: 8px;
+  left: 50%;
+  margin-left: -33px;
+  border-radius: 50px;
+}
+
+.b-vertical {
+  display: none;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 150px;
+  padding: 10px;
+  position: relative;
+}
+
+.b-product {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.b-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.b-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.j-chart {
+  width: calc(100% - 170px);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+
+.j-line {
+  display: block;
+  height: 100%;
+  max-width: 180px;
+  width: 100%;
+  background: gray;
+}
+
+input[type=range]  {
+  width: 200px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: revert;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: black;
+  height: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: black;
+  cursor: pointer;
+  width:15px;
+  height: 15px;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+
+.b-visibility {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .b-horizantal {
+    display: none;
+  }
+
+  .b-vertical {
+    display: block;
+  }
+
+  .scales {
+    flex-direction: column;
+  }
+
+  .product-price {
+    padding-top: 10px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+
+  .product:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: black;
+    height: 10px;
+    left: 0;
+    width: 100%;
+    right: 0;
+    border-radius: 50px;
+    margin-left: 0;
+    bottom: 50%;
+    margin-bottom: -53px;
+  }
+
+  .b-vertical {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: initial;
+    overflow: hidden;
+  }
+
+  .b-vertical-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .b-vertical-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    height: 100px;
+  }
+
+  .b-vertical-scales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .j-chart {
+    height: 200px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    width: 20px;
+  }
+
+  .j-line {
+    display: block;
+    height: 100%;
+    max-width: 20px;
+    max-height: 180px;
+    width: 100%;
+    background: gray;
+  }
+}
+
+

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+<div class="main">
+    <div class="wr">
+        <div class="content">
+            <div class="scales">
+                <div class="scales-storage">
+                    <p>Storage: <span id="value-storage">100</span> GB</p>
+                    <div class="scales-input" data-minValue = "0" data-maxValue = "1000">
+                        <input
+                                id="storage"
+                                value="100"
+                                type="range"
+                                min="0"
+                                max="1000"
+                                step="1"
+                        />
+                    </div>
+                </div>
+                <div class="scales-transfer">
+                    <p>Transfer: <span id="value-transfer">400</span> GB</p>
+                    <div class="scales-input" data-minValue = "0" data-maxValue = "1000">
+                        <input
+                                id="transfer"
+                                type="range"
+                                value="400"
+                                min="0"
+                                max="1000"
+                                step="1"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="product b-horizantal">
+                <div class="b-product">
+                    <div class="b-content">
+                        <p>backblaze</p>
+                        <img src="./assets/img/backblaze_logo.png" alt="#">
+                    </div>
+                    <div class="j-chart" data-value="7" data-type="backblaze">
+                        <span class="j-line"></span>
+                        <div class="product-price">
+                            <span class="j-value">7</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product">
+                    <div class="b-content">
+                        <div class="product-title">
+                            <p>bunny</p>
+                            <div class="b-checkbox">
+                                <div class="b-input">
+                                    <input type="radio" name="bunny" id="hdd" checked/>
+                                    <label for="hdd">HDD</label>
+                                </div>
+                                <div class="b-input">
+                                    <input type="radio" name="bunny" id="ssd"/>
+                                    <label for="ssd">SSD</label>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/img/bunny_logo.png" alt="#">
+                    </div>
+                    <div class="j-chart" data-value="5" data-type="bunny">
+                        <span class="j-line"></span>
+                        <div class="product-price">
+                            <span class="j-value">5</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product">
+                    <div class="b-content">
+                        <div class="product-title">
+                            <p>scaleay</p>
+                            <div class="b-checkbox">
+                                <div class="b-input">
+                                    <input type="radio" name="scaleway" id="multi" checked/>
+                                    <label for="multi">Multi</label>
+                                </div>
+                                <div class="b-input">
+                                    <input type="radio" name="scaleway" id="single"/>
+                                    <label for="single">Single</label>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/img/scaleway_logo.png" alt="#">
+                    </div>
+                    <div class="j-chart" data-value="8" data-type="scaleway">
+                        <span class="j-line"></span>
+                        <div class="product-price">
+                            <span class="j-value">8</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product">
+                    <div class="b-content">
+                        <p>vultr</p>
+                        <img src="./assets/img/vultr_logo.png" alt="#">
+                    </div>
+                    <div class="j-chart" data-value="5" data-type="vultr">
+                        <span class="j-line"></span>
+                        <div class="product-price">
+                            <span class="j-value">8</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product b-vertical">
+                <div class="b-product b-vertical-product">
+                    <div class="b-content b-vertical-content">
+                        <p>backblaze</p>
+                        <img src="./assets/img/backblaze_logo.png" alt="#">
+                    </div>
+                    <div class="j-chart" data-value="7" data-type="backblaze" data-position="vertical">
+                        <span class="j-line"></span>
+                        <div class="product-price">
+                            <span class="j-value">7</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product b-vertical-product">
+                    <div class="b-content b-vertical-content">
+                        <div class="product-title">
+                            <p>bunny</p>
+                            <div class="b-checkbox">
+                                <div class="b-input">
+                                    <input type="radio" name="bunnyV" id="hddV" checked/>
+                                    <label for="hddV">HDD</label>
+                                </div>
+                                <div class="b-input">
+                                    <input type="radio" name="bunnyV" id="ssdV"/>
+                                    <label for="ssdV">SSD</label>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/img/bunny_logo.png" alt="#">
+                    </div>
+                    <div class="j-chart" data-value="5" data-type="bunny" data-position="vertical">
+                        <span class="j-line"></span>
+                        <div class="product-price">
+                            <span class="j-value">5</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product b-vertical-product">
+                    <div class="b-content b-vertical-content">
+                        <div class="product-title">
+                            <p>scaleay</p>
+                            <div class="b-checkbox">
+                                <div class="b-input">
+                                    <input type="radio" name="scalewayV" id="multiV" checked/>
+                                    <label for="multiV">Multi</label>
+                                </div>
+                                <div class="b-input">
+                                    <input type="radio" name="scalewayV" id="singleV"/>
+                                    <label for="singleV">Single</label>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/img/scaleway_logo.png" alt="#">
+                    </div>
+                    <div class="j-chart" data-value="8" data-type="scaleway" data-position="vertical">
+                        <span class="j-line"></span>
+                        <div class="product-price">
+                            <span class="j-value">8</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-product b-vertical-product">
+                    <div class="b-content b-vertical-content">
+                        <p>vultr</p>
+                        <img src="./assets/img/vultr_logo.png" alt="#">
+                    </div>
+                    <div class="j-chart" data-value="5" data-type="vultr" data-position="vertical">
+                        <span class="j-line"></span>
+                        <div class="product-price">
+                            <span class="j-value">5</span>
+                            <span>$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./javaScript.js"></script>
+</body>
+</html>
